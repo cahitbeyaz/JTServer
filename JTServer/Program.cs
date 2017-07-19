@@ -3,6 +3,7 @@ using Newtonsoft.Json;
 using SimpleTCP;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -16,7 +17,7 @@ namespace JTServer
 
         static void Main(string[] args)
         {
-            short port = 2001;
+            short port = short.Parse(ConfigurationManager.AppSettings["Port"]);
             var server = new SimpleTcpServer().Start(port);
             server.DataReceived += Server_DataReceived;
             server.StringEncoder = Encoding.ASCII;
