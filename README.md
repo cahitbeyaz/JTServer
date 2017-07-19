@@ -17,3 +17,5 @@ SET vip number at index1 command
 (P11,1,1,905373400906)
 
 After successfull P06 command you should be able to receive data from JT701 device.
+
+(P1): GetFirmware
