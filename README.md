@@ -14,7 +14,7 @@ REMOTE PORT:2000
 remote ip: 78.175.159.172 (must be accessible from public internet)
 
 SET vip number at index1 command 
-(P11,1,1,905373400906)
+(P11,1,1,905320011234)
 
 After successfull P06 command you should be able to receive data from JT701 device.
 
